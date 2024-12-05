@@ -1,0 +1,30 @@
+[project]
+name = "fcn-2020"
+version = "0.1.0"
+description = "SzCORE compatible reproduction of Gomez, 'Automatic seizure detection based on imaged-EEG signals through fully convolutional networks', Gomez. Scientific reports, 2020."
+authors = [
+    { name = "Amirhossein Shahbazinia", email = "amirhossein.shahbazinia@epfl.ch" },
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye.dependencies]
+numpy = "*"
+scipy = "*"
+epilepsy2bids = "0.0.7"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fcn_2020"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "*.py",
+    "src/fcn_2020/model_weights.pth",
+]

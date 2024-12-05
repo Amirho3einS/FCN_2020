@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/fcn_2020/__init__.py
+src/fcn_2020/__main__.py
+src/fcn_2020/fcn.py
+src/fcn_2020/main.py
+src/fcn_2020/utils.py
+src/fcn_2020.egg-info/PKG-INFO
+src/fcn_2020.egg-info/SOURCES.txt
+src/fcn_2020.egg-info/dependency_links.txt
+src/fcn_2020.egg-info/top_level.txt
