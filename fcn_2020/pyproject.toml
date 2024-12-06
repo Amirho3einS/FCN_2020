@@ -8,10 +8,11 @@ authors = [
 readme = "README.md"
 requires-python = ">= 3.10"
 
-[dependencies]
-numpy = "*"
-scipy = "*"
-epilepsy2bids = "0.0.7"
+dependencies =[
+    "numpy",
+    "scipy",
+    "epilepsy2bids==0.0.7"
+] 
 
 [build-system]
 requires = ["hatchling"]
